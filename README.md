@@ -6,7 +6,7 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 ## Link to the application
 
-Check out the live demo: 
+Check out the live demo: https://lookupforcinema.herokuapp.com/
 
 ## Finding similar movies
 ### Without taking content into account (Just based on ratings)
