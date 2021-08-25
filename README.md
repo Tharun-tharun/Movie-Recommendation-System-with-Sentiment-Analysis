@@ -1,9 +1,4 @@
-# The-Movie-Cinema
-
-![Python](https://img.shields.io/badge/Python-3.8-blueviolet)
-![Framework](https://img.shields.io/badge/Framework-Flask-red)
-![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
-![API](https://img.shields.io/badge/API-TMDB-fcba03)
+# Movie-Recommendation-System
 
 This application provides all the details of the requested movie such as overview, genre, release date, rating, runtime, top cast, reviews, recommended movies, etc.
 
@@ -11,30 +6,37 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 ## Link to the application
 
-Check out the live demo: https://the-movie-cinema.herokuapp.com/
+Check out the live demo: 
 
-# Note
+## Finding similar movies
+### Without taking content into account (Just based on ratings)
 
-> #### Use this URL - https://the-movie-buff.herokuapp.com/ - in case if you see application error in the above mentioned URL
+Here just based on the ratings of the users for different movies, we use K nearest neighbours algorithm to find the movies which are similar.
 
-Don't worry if the movie that you are looking for is not auto-suggested. Just type the movie name and click on "enter". You will be good to go even though if you made some typo errors.
+### With taking Content into account
 
-## 'Invalid Request' Error
+Here we just information about the movies, in this case the information of genres to predict the most similar movies.
 
-If you're getting invalid request error in your application, kindly go through this issue - https://github.com/kishan0725/The-Movie-Cinema/issues/2
+## Matrix Factorisation(Collabarative Filtering)
 
-## How to get the API key?
+Two approaches were tried to do matrix factorisation, the low rank method is very slow, so used scipy's SVD for sparse matrix.
 
-Create an account in https://www.themoviedb.org/, click on the `API` link from the left hand sidebar in your account settings and fill all the details to apply for API key. If you are asked for the website URL, just give "NA" if you don't have one. You will see the API key in your `API` sidebar once your request is approved.
 
-## How to run the project?
+## Deep Learning Methods
 
-1. Clone this repository in your local system.
-2. Install all the libraries mentioned in the [requirements.txt](https://github.com/kishan0725/The-Movie-Cinema/blob/master/requirements.txt) file with the command `pip install -r requirements.txt`.
-3. Replace YOUR_API_KEY in **both** the places (line no. 23 and 43) of `static/recommend.js` file.
-4. Open your terminal/command prompt from your project directory and run the `main.py` file by executing the command `python main.py`.
-5. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
-6. Hurray! That's it.
+One popular recommender systems approach is called Matrix Factorisation. It works on the principle that we can learn a low-dimensional representation (embedding) of user and movie. For example, for each movie, we can have how much action it has, how long it is, and so on. For each user, we can encode how much they like action, or how much they like long movies, etc. Thus, we can combine the user and the movie embeddings to estimate the ratings on unseen movies. This approach can also be viewed as: given a matrix (A [M X N]) containing users and movies, we want to estimate low dimensional matrices (W [M X k] and H [M X k]), such that: A≈W.H<sup>T</sub>
+### 1.Matrix Factorisation based on Deep learning
+### 2. Matrix Factorisation based on Deep learning with non negative embeddings.
+### 3. Advanced neural network with different number of embeddings for both and movies.
+
+
+## Required Tools
+
+1. Keras
+2. Scipy
+3. Numpy
+4. Pandas
+5. python 3
 
 ### Sources of the datasets 
 
