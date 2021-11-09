@@ -8,10 +8,6 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 Check out the live demo: https://lookupforcinema.herokuapp.com
 
-# Medium Article About My Project
-
-https://medium.com/analytics-vidhya/build-a-movie-recommendation-flask-based-deployment-8e2970f1f5f1
-
 ## Finding similar movies
 ### Without taking content into account (Just based on ratings)
 
@@ -24,10 +20,6 @@ Here we just information about the movies, in this case the information of genre
 ## Matrix Factorisation(Collabarative Filtering)
 
 Two approaches were tried to do matrix factorisation, the low rank method is very slow, so used scipy's SVD for sparse matrix.
-
-## Architecture
-
-![110212434-597bb700-7ec1-11eb-9ffa-7ac319e33123](https://user-images.githubusercontent.com/41158838/140874190-d2e44e15-af53-4792-acfb-f68251e09334.jpg)
 
 ## Deep Learning Methods
 
