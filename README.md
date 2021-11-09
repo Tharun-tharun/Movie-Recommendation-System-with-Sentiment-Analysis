@@ -8,6 +8,10 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 Check out the live demo: https://lookupforcinema.herokuapp.com
 
+# Medium Article About My Project
+
+https://medium.com/analytics-vidhya/build-a-movie-recommendation-flask-based-deployment-8e2970f1f5f1
+
 ## Finding similar movies
 ### Without taking content into account (Just based on ratings)
 
