@@ -25,6 +25,9 @@ Here we just information about the movies, in this case the information of genre
 
 Two approaches were tried to do matrix factorisation, the low rank method is very slow, so used scipy's SVD for sparse matrix.
 
+## Architecture
+
+![110212434-597bb700-7ec1-11eb-9ffa-7ac319e33123](https://user-images.githubusercontent.com/41158838/140874190-d2e44e15-af53-4792-acfb-f68251e09334.jpg)
 
 ## Deep Learning Methods
 
